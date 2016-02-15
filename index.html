@@ -13,14 +13,13 @@
 
     <!-- Modals for form here -->
     <div id="img1" style="display:none;">
-
       <h2>Submit a Review</h2>
-      <img src="images/long/campingphoto.jpg" alt="Anya" width="2%"/>
-      <p>My name is Anya Venezia and I'm a senior at Washington University. I love camping but with so many great
-        options I spend so much time just deciding where to go. blabla </p>
-
 
       <form action="//formspree.io/gvenezia@wustl.edu" method="POST">
+        <p>My name is Anya Venezia and I'm a senior at Washington University. I love camping, but with so many great
+          options I spend too much time just deciding where to go. I created this website to help those in the St. Louis area
+        plan the perfect overnight trip. I appreciate any feedback or recommendations! </p>
+        <fieldset>
         <div>
           <label>name</label>
           <input type="text" name="name" value="your name">
@@ -30,14 +29,28 @@
           <input type="text" name="mail" value="your email">
         </div>
         <div>
-          <label>comment</label>
-          <input type="text" name="comment" value="your comment" size="50">
+          <label>year:</label>
+          <input type="radio" name="year" value="freshman"/>freshman
+          <input type="radio" name="year" value="sophomore"/>sophomore
+          <input type="radio" name="year" value="junior"/>junior
+          <input type="radio" name="year" value="senior"/>senior
+          <input type="radio" name="year" value="grad student"/>grad student
+          <input type="radio" name="year" value="other"/>other
+      </fieldset>
+
+      <fieldset>
+        <div>
+          <label>Park</label>
+          <input type="text" name="park" value="your park">
         </div>
+        <div>
+          <textarea name="review" value="your review" rows="4" cols="50"> your review </textarea>
+        </div>
+      </fieldset>
         <div>
           <input type="submit" value="Send">
         </div>
       </form>
-
     </div>
     <!-- Modal ends -->
 
@@ -50,6 +63,8 @@
         <p>Camping is the ultimate bonding experience!</p>
         <a href="#img1" rel="modal:open" class="button">Recommend a Campsite</a>
      </section>
+
+
 
     <section>
       <hr/>
@@ -64,7 +79,6 @@
       </p>
        <hr/>
    </section>
-
 
       <section class="main-content">
         <h3>Campsite by Distance</h3>
@@ -95,7 +109,8 @@
             <td>Wildwood, MO</td>
             <td>33min</td>
             <td>year-round</td>
-            <td>"Rather large park with many good trails. One of the better spots to do some day hiking. Some good elevation changes. Free parking and free to enjoy!"</td>
+            <td>"Rather large park with many good trails. One of the better spots to do some day hiking.
+              Some good elevation changes. Free parking and free to enjoy!"</td>
           </tr>
           <tr>
             <td><a href="http://www.cherokeelanding.com/camp.html" target=”_blank”>Cherokee Landing</a></td>
@@ -235,6 +250,9 @@
           </tr>
         </table>
       </section>
+
+      <h3>Student Photo Gallery</h3>
+
 
       <footer class="site-footer">
         <hr>
