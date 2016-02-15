@@ -15,7 +15,7 @@
     <div id="img1" style="display:none;">
       <h2>Submit a Review</h2>
 
-      <form action="//formspree.io/gvenezia@wustl.edu" method="POST">
+      <form action="http://formspree.io/gvenezia@wustl.edu" method="POST">
         <p>My name is Anya Venezia and I'm a senior at Washington University. I love camping, but with so many great
           options I spend too much time just deciding where to go. I created this website to help those in the St. Louis area
         plan the perfect overnight trip. I appreciate any feedback or recommendations! </p>
@@ -36,6 +36,7 @@
           <input type="radio" name="year" value="senior"/>senior
           <input type="radio" name="year" value="grad student"/>grad student
           <input type="radio" name="year" value="other"/>other
+        </div>
       </fieldset>
 
       <fieldset>
@@ -44,7 +45,7 @@
           <input type="text" name="park" value="your park">
         </div>
         <div>
-          <textarea name="review" value="your review" rows="4" cols="50"> your review </textarea>
+          <textarea name="review" rows="4" cols="50"> your review </textarea>
         </div>
       </fieldset>
         <div>
@@ -214,7 +215,6 @@
             <td>"A GEM for summertime fun....Want safe fun? Wade in the shallow areas away from the cascading rocks. Want to be a dangerbear?
               Then go exploring and find yourself some slippery slidey rocks that have been shaped into natural slides and go wedge
               your bottom in for a whirl."</td>
-"
           </tr>
           <tr>
             <td><a href="https://mostateparks.com/park/st-joe-state-park" target=”_blank”>St. Joe State Park</a></td>
@@ -252,6 +252,18 @@
       </section>
 
       <h3>Student Photo Gallery</h3>
+      <form action="//formspree.io/gvenezia@wustl.edu" method="POST">
+        <fieldset>
+          <label>submit a photo</label>
+          <input type="file" name="photo" value="photo"/>
+          <input type="submit" value="Send"/>
+        </fieldset>
+        <br>
+      </form>
+       <img src="images/long/tree.jpg" alt="Park" width="50%"/>
+        <img src="images/long/quarry.jpg" alt="Park" width="50%"/>
+         <img src="images/long/rock.jpg" alt="Park" width="50%"/>
+
 
 
       <footer class="site-footer">
